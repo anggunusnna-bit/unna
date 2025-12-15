@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyDrink Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animasi Burung -->
+    <div class="bird bird1">🐦</div>
+    <div class="bird bird2">🕊️</div>
+
+    <!-- Pohon -->
+    <div class="trees">🌳 🌲 🌳</div>
+
+    <div class="container">
+        <h1>SkyDrink Market</h1>
+        <p>Marketplace Minuman Modern</p>
+
+        <!-- LOGIN -->
+        <div id="loginBox">
+            <input type="text" id="username" placeholder="Nama Pengguna">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- DASHBOARD -->
+        <div id="dashboard" class="hidden">
+            <p>Halo, <span id="userName"></span></p>
+
+            <h3>Posting Produk Minuman</h3>
+            <input type="text" id="productName" placeholder="Nama Minuman">
+            <input type="number" id="productPrice" placeholder="Harga">
+            <input type="text" id="productAddress" placeholder="Alamat Penjual">
+            <input type="file" accept="image/*" id="productImage">
+            <button onclick="addProduct()">Posting Produk</button>
+
+            <button class="logout" onclick="logout()">Logout</button>
+        </div>
+
+        <hr>
+
+        <!-- PRODUK -->
+        <h2>Daftar Produk</h2>
+        <div id="productList" class="products"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
