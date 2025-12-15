@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") no-repeat center/cover;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 140, 90, 0.75);
+    width: 380px;
+    margin: 60px auto;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Input & Button */
+input, button {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background: #ff5722;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e64a19;
+}
+
+.logout {
+    background: #333;
+}
+
+/* Produk */
+.products {
+    margin-top: 10px;
+}
+
+.product {
+    background: white;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Burung Terbang */
+.bird {
+    position: absolute;
+    font-size: 35px;
+    animation: fly 15s linear infinite;
+}
+
+.bird1 {
+    top: 15%;
+}
+
+.bird2 {
+    top: 30%;
+    animation-duration: 20s;
+}
+
+@keyframes fly {
+    from { left: -10%; }
+    to { left: 110%; }
+}
+
+/* Pohon Bergoyang */
+.trees {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    animation: sway 3s ease-in-out infinite alternate;
+}
+
+@keyframes sway {
+    from { transform: rotate(-1deg); }
+    to { transform: rotate(1deg); }
+}
